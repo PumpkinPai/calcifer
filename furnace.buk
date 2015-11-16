@@ -1,0 +1,16 @@
+
+** FURNACE SETUP NOTES **
+
+** Duct Valves **
+    - 7 valves total
+    - 4 conductor phone wires: 
+        - open, close, ground, stop
+        - OR two motor drive wires, one direction, one stop
+        - one stop switch per valve (Momentary push spdt)
+        - connects motor drive wires to stop wire when closed
+            - motor drive wires connect to switch with diodes and resistor
+        - Stop is ignored by controller for short time after start in case
+            it is depressed at start
+
+** Controller board **
+    * Arduino nano in dip socket
